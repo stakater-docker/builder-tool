@@ -14,5 +14,4 @@ RUN apt-get update && \
     chmod +x ./aws-iam-authenticator && \
     mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$HOME/bin:$PATH && \
     echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc && \
-    source ~/.bashrc && \
     apt-get remove --purge -y unzip wget curl
