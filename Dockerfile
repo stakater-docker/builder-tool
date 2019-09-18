@@ -1,4 +1,4 @@
-FROM debian:9
+FROM stakater/gitlab:0.0.4-terraform-0-12-7
 MAINTAINER Irtiza Ali (irtiza@aurorasolutions.io)
 
 RUN apt-get update && \
