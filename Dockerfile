@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install -y unzip && \
     apt-get install -y wget && \
     apt-get install -y git && \
-    apt-get isntall -y curl && \
+    apt-get install -y curl && \
     wget https://releases.hashicorp.com/terraform/0.12.7/terraform_0.12.7_linux_amd64.zip && \
     unzip terraform_0.12.7_linux_amd64.zip && \
     mv terraform /usr/local/bin/ && \
