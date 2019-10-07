@@ -11,7 +11,11 @@ RUN apt-get update && \
     chmod +x ./aws-iam-authenticator && \
     mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$HOME/bin:$PATH && \
     echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc && \
+    apt-get install -y apt-transport-https ca-certificates && \
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-    apt-get install -y yarn && \
+    curl -sL https://deb.nodesource.com/setup_10.x | bash -&& \
+    apt-get install -y nodejs && \
+    apt update && \
+    apt install -y yarn && \
     apt-get remove --purge -y unzip wget
