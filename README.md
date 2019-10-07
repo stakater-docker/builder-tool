@@ -1,6 +1,8 @@
 # builder-tool
 
-Image containing minimal tools for pipeline configuration. 
+**Note**: Not build through Terraform
+
+Image containing minimal tools for pipeline configuration.
 
 It is being for the deployment of eks cluster on AWS. It's images is being used in this [repository](https://github.com/stakater/terraform-aws-eks).
 
