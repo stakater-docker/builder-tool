@@ -11,6 +11,8 @@ RUN apt-get update && \
     chmod +x ./aws-iam-authenticator && \
     mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$HOME/bin:$PATH && \
     echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc && \
+    curl -o kubeseal https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.9.6/kubeseal-linux-amd64 && \
+    install -m 755 kubeseal /usr/local/bin/kubeseal && \
     apt-get install -y apt-transport-https ca-certificates && \
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
