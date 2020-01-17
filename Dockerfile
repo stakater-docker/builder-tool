@@ -20,5 +20,4 @@ RUN apt-get update && \
     tar xvzf v2.1.7.tar.gz && mkdir -p /usr/share/shunit2/ && \
     cp shunit2-2.1.7/shunit2 /usr/share/shunit2/shunit2 && \
     echo 'export PATH=/usr/share/shunit2:$PATH' >> ~/.bashrc && \
-    curl -sL https://aka.ms/InstallAzureCLIDeb | bash && \
-    apt-get remove --purge -y unzip wget
+    curl -sL https://aka.ms/InstallAzureCLIDeb | bash
