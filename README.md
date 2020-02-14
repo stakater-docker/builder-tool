@@ -4,7 +4,7 @@
 
 Image containing minimal tools for pipeline configuration.
 
-It is being for the deployment of eks cluster on AWS. It's images is being used in this [repository](https://github.com/stakater/terraform-aws-eks).
+It is being used for the deployment of eks cluster on AWS. It's images is being used in this [repository](https://github.com/stakater/terraform-aws-eks).
 
 There are two folders containing different versions of terraform so two images has been build with different prefixes, which are given below:
 
