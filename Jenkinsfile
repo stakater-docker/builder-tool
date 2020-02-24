@@ -3,5 +3,5 @@
 
 pushDockerImage {
     dockerRepositoryURL = "docker.io"
-    imagePrefix = "terraform-0.12.7"
+    imagePrefix = "terraform-0.12.17"
 }
